@@ -1,7 +1,7 @@
 {
   "name": "imravi",
   "version": "0.1.0",
-  "homepage": "uiravi.github.io",
+  "homepage": "https://uiravi.github.io/imravi",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
