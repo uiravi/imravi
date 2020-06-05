@@ -2,7 +2,7 @@ import React from "react";
 export default function Education(){
     return(
         <>
-            <h3 className="resume-title">Education</h3>
+            <h3 className="page-sub-title">Education</h3>
             <div className="resume-timeline">
                 <div className="timeline-left">
                     <h5 className="timeline-period">2012 - 2015</h5>

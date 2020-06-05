@@ -2,7 +2,7 @@ import React from "react";
 export default function Experience(){
     return(
         <>
-            <h3 className="resume-title">Experience</h3>
+            <h3 className="page-sub-title">Experience</h3>
             <div className="resume-timeline">
                 <div className="timeline-left">
                     <h5 className="timeline-period">Nov 2016 - Present</h5>

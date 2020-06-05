@@ -2,7 +2,7 @@ import React from "react";
 export default function Skils(){
     return(
         <div className="slills-wrapper">
-            <h3 className="resume-title">Development <span>Skills</span></h3>
+            <h3 className="page-sub-title">Development <span>Skills</span></h3>
             <div className="skills">
                 <div className="skill-title">JavaScript <span>95%</span></div>
                 <div className="skill-bar"><span className="skill-fill-bar" style={{width: "95%"}}></span></div>

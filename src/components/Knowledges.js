@@ -2,7 +2,7 @@ import React from "react";
 export default function Knowledges(){
     return(
         <div className="knowledges-wrapper">
-            <h3 className="resume-title">Knowledges</h3>
+            <h3 className="page-sub-title">Knowledges</h3>
             <ul className="knowledges">
                 <li>React JS</li>
                 <li>JavaScript</li>

@@ -33,6 +33,9 @@ export default class App extends PureComponent {
       <React.Fragment>
           <section className="main-container">
               <section className="container">
+                  <div className="menu-toggle">
+                    <span></span>
+                  </div>
                   <Header
                     navigation={this.navigation}
                   />
