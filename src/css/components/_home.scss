@@ -1,0 +1,32 @@
+.animated-sections{
+    position: relative;
+    height: 100%;
+    .animated-section{
+        background: #fff;
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        padding: 50px 10px 50px 50px;
+        position: absolute;
+        visibility: hidden;
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .scroll-section{
+        height: 100%;
+        overflow-y: auto;
+        padding-right: 40px;
+        &::-webkit-scrollbar-thumb{
+            visibility: hidden;
+        }
+        &:hover{
+            &::-webkit-scrollbar-thumb{
+                visibility: visible;
+            }
+        }
+    }
+}

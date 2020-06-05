@@ -1,5 +1,182 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
 body{
+    background: $body-bg-color;
     color: $base-color;
     font-family: $base-font-family;
     font-size:$base-font-size;
+}
+
+.main-container{
+    display: flex;
+    margin: 10vh auto;
+    max-width: 1366px;
+    position: relative;
+}
+
+.container{
+    background: #09aeea;
+    border-radius: 32px;
+    display: flex;
+    height: 80vh;
+    width: calc(100% - 90px);
+    -webkit-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
+    box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: -webkit-gradient(linear, left top, left bottom, from(#21e1ae), to(#09aeea));
+    background: linear-gradient(#21e1ae, #09aeea);
+
+    .header{
+        padding: 70px 20px 30px;
+        width: 330px;
+    }
+
+    .content-area{
+        width: calc(100% - 330px);
+    }
+
+    .header-content{
+
+    }
+
+    .header-photo{
+        height: 180px;
+        width: 180px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        img{
+            max-width: 100%;
+            background-color: #fff;
+            border: 3px solid #fff;
+            border-radius: 300px;
+        }
+        &::after{
+            background-size: 6px 6px;
+            -webkit-background-size: 6px 6px;
+            -moz-background-size: 6px 6px;
+            background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+            background-image: -moz-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+            background-image: -ms-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+            content: '';
+            border-radius: 300px;
+            height: calc(100% + 0px);
+            width: calc(100% + 0px);
+            position: absolute;
+            top: 7%;
+            left: 7%;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    }
+
+    .header-titles{
+        color: #fff;
+        text-align: center;
+        margin-top: 40px;
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.2em;
+
+        }
+        h4 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+    }
+
+    .social-links{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        .icon-linkedin, .icon-facebook, .icon-twitter{
+            border-radius: 20px;
+            display: flex;
+            fill:#fff;
+            margin: 0 5px;
+            justify-content: center;
+            height:30px;
+            width:30px;
+            opacity: .9;
+            transition: all 0.3s ease-in-out;
+            svg{
+                fill:#fff;
+                width: 16px;
+            }
+        }
+        .icon-facebook{
+            svg{width: 11px;}
+        }
+        .icon-twitter{
+            svg{width: 18px;}
+        }
+        .icon-linkedin:hover, .icon-facebook:hover, .icon-twitter:hover{
+            opacity: 1;
+            background-color: rgba(255,255,255,.2);
+        }
+    }
+    
+    .header-button{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .page-title{
+        display: inline-block;
+        font-size: 32px;
+        position: relative;
+        &::after{
+            position: absolute;
+            opacity: 0.45;
+            top: 22px;
+            right: 0;
+            content: '';
+            height: 30px;
+            width: 50px;
+            background-image: -webkit-repeating-radial-gradient(center center, #09aeea, #09aeea 1px, transparent 0px, transparent 100%);
+            background-image: -moz-repeating-radial-gradient(center center, #09aeea, #09aeea 1px, transparent 0px, transparent 100%);
+            background-image: -ms-repeating-radial-gradient(center center, #09aeea, #09aeea 1px, transparent 0px, transparent 100%);
+            -webkit-background-size: 6px 6px;
+            -moz-background-size: 6px 6px;
+            background-size: 6px 6px;
+            transform: translateX(50%);
+            z-index: 0;
+        }
+        span{
+            color: #09aeea;
+        }
+    }
+}
+
+/* Start gloabal scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #0db6e0; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0db6e0; 
+}
+/* End gloabal scrollbar */
+
+@media only screen and (max-width: 1420px) {
+    .main-container{
+        width: 95vw;
+    }
 }
