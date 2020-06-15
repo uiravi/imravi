@@ -9,7 +9,9 @@ export default class App extends PureComponent {
       activeNavHome: true,
       activeNavAbout: false,
       activeNavPortfolio: false,
-      activeNavContact: false
+      activeNavContact: false,
+      menuActive:false,
+      menuToggle:false
     };
   }
 
@@ -26,18 +28,32 @@ export default class App extends PureComponent {
     if(event.currentTarget.className == "nav-contact"){
       this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: true});
     }
-  }  
+    this.setState({menuActive:false, menuToggle:false});
+  }
+
+  manuToggle = (event) => {
+    let isActive = event.currentTarget.classList.contains("active");
+
+        if(isActive){
+            this.setState({menuActive:false, menuToggle:false});
+        }else{
+          this.setState({menuActive:true, menuToggle:true});
+        }
+  }
 
   render(){
     return (
       <React.Fragment>
           <section className="main-container">
               <section className="container">
-                  <div className="menu-toggle">
+                  <div className={"menu-toggle " + (this.state.menuToggle ? "active" : "")} onClick={this.manuToggle}>
+                    <span></span>
+                    <span></span>
                     <span></span>
                   </div>
                   <Header
                     navigation={this.navigation}
+                    menuActive={this.state.menuActive}
                   />
                   <Home
                     activeNavHome={this.state.activeNavHome}

@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 
 export default function Header(props){
     return(
-            <div className="header">
+            <div className={"header " + (props.menuActive ? "active" : "")}>
                 <div className="header-content">
                     <div className="header-photo">
                         <img src={require('../images/ravi.jpg')} alt="Ravi Shankar Kumar" />
