@@ -15,9 +15,7 @@ export default function Experience(){
                         BOLD Technology Systems Pvt. Ltd
                     </p>
                     <ul className="what-i-do">
-                        <li>Create HTML pages according to need for project.</li>
-                        <li>Writing JavaScript for the project as required.</li>
-                        <li>Sorting out error of dynamic pages and cross browser compatibility.</li>
+                        <li>Working as a technical lead</li>
                     </ul>
                 </div>
             </div>

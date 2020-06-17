@@ -6,10 +6,21 @@ export default function AboutMe(props){
         <div className={"animated-section " + (props.activeNavAbout ? "active animate__animated animate__backInDown" : "")}>
             <div className="scroll-section">
                 <h2 className="page-title">About <span>Me</span></h2>
-                <p className="about-me-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div className="about-me-box">
+                    <div className="about-me-left">
+                        <p className="about-me-text">I am a Front-End Developer. I specialize in creating web pages using front-end technologies like core JavaScript, React, HTML, CSS. I enjoy turning the complex problem into simple. When I am not coding, I love to travel and explore new locations.</p>
+                        <p className="about-me-text">When I am not coding, I love to travel and explore new locations.</p>
+                    </div>
+                    <div className="about-me-right">
+                        <p className="about-info"><span>Age:</span> 30</p>
+                        <p className="about-info"><span>Residence:</span> India</p>
+                        <p className="about-info"><span>Email:</span> jq.ravi@gmail.com</p>
+                        <p className="about-info"><span>Linkedin:</span> uiravi</p>
+                    </div>
+                </div>
+                
                 <h3 className="page-sub-title">Testimonials</h3>
                 <Testimonials />
-                <h3 className="page-sub-title">What <span>I Do</span></h3>
             </div>
         </div>
     )

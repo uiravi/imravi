@@ -43,7 +43,7 @@
             opacity: 1;
             visibility: visible;
         }
-        &:hover svg{
+        &:hover svg, &.active svg{
             fill:#09aeea;
         }
     }
@@ -61,7 +61,7 @@
             margin-bottom: 10px;
             text-align: left;
             padding: 10px 30px;
-            &:hover{
+            &:hover, &.active{
                 svg{fill: #fff;}
             }
             &.nav-home svg{

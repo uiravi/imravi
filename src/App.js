@@ -16,16 +16,17 @@ export default class App extends PureComponent {
   }
 
   navigation = (event) => {
-    if(event.currentTarget.className == "nav-home"){
+    let ids = event.currentTarget.dataset.id;
+    if(ids == "home"){
       this.setState({activeNavHome: true, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: false});
     }
-    if(event.currentTarget.className == "nav-about"){
+    if(ids == "about"){
       this.setState({activeNavHome: false, activeNavAbout: true, activeNavPortfolio: false, activeNavContact: false});
     }
-    if(event.currentTarget.className == "nav-portfolio"){
+    if(ids == "portfolio"){
       this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: true, activeNavContact: false});
     }
-    if(event.currentTarget.className == "nav-contact"){
+    if(ids == "contact"){
       this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: true});
     }
     this.setState({menuActive:false, menuToggle:false});
@@ -54,6 +55,10 @@ export default class App extends PureComponent {
                   <Header
                     navigation={this.navigation}
                     menuActive={this.state.menuActive}
+                    activeNavHome={this.state.activeNavHome}
+                    activeNavAbout={this.state.activeNavAbout}
+                    activeNavPortfolio={this.state.activeNavPortfolio}
+                    activeNavContact={this.state.activeNavContact}
                   />
                   <Home
                     activeNavHome={this.state.activeNavHome}

@@ -16,6 +16,10 @@ export default function Header(props){
                 </div>
                 <Navigation
                     navigation= {props.navigation}
+                    activeNavHome={props.activeNavHome}
+                    activeNavAbout={props.activeNavAbout}
+                    activeNavPortfolio={props.activeNavPortfolio}
+                    activeNavContact={props.activeNavContact}
                 />
                 <SocialLinks />
                 <div className="header-button">

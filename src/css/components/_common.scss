@@ -259,6 +259,7 @@ body{
         .content-area{width: 100%;}
     }
     .container{
+        border-radius: 0;
         height: 100vh;
         width: 100%;
         .header{
@@ -271,6 +272,7 @@ body{
             transition: .5s;
             &.active{
                 right: 0;
+                overflow-y: auto;
             }
         }
         .header-photo{
@@ -287,6 +289,8 @@ body{
                 margin-top: 2px;
             }
         }
+        .social-links{margin: 0;}
+        .header-button{margin-top: 30px;}
     }
     .animated-sections .animated-section{
         border-radius: 0;
