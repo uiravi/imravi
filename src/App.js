@@ -17,16 +17,16 @@ export default class App extends PureComponent {
 
   navigation = (event) => {
     let ids = event.currentTarget.dataset.id;
-    if(ids == "home"){
+    if(ids === "home"){
       this.setState({activeNavHome: true, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: false});
     }
-    if(ids == "about"){
+    if(ids === "about"){
       this.setState({activeNavHome: false, activeNavAbout: true, activeNavPortfolio: false, activeNavContact: false});
     }
-    if(ids == "portfolio"){
+    if(ids === "portfolio"){
       this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: true, activeNavContact: false});
     }
-    if(ids == "contact"){
+    if(ids === "contact"){
       this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: true});
     }
     this.setState({menuActive:false, menuToggle:false});

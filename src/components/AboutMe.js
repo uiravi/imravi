@@ -12,10 +12,10 @@ export default function AboutMe(props){
                         <p className="about-me-text">When I am not coding, I love to travel and explore new locations.</p>
                     </div>
                     <div className="about-me-right">
-                        <p className="about-info"><span>Age:</span> 30</p>
-                        <p className="about-info"><span>Residence:</span> India</p>
-                        <p className="about-info"><span>Email:</span> jq.ravi@gmail.com</p>
-                        <p className="about-info"><span>Linkedin:</span> uiravi</p>
+                        <p className="about-info"><span>Age:</span> {window.RSK.personDetails.age}</p>
+                        <p className="about-info"><span>Residence:</span> {window.RSK.personDetails.residence}</p>
+                        <p className="about-info"><span>Email:</span> {window.RSK.personDetails.email}</p>
+                        <p className="about-info"><span>Linkedin:</span> {window.RSK.personDetails.linkedin}</p>
                     </div>
                 </div>
                 

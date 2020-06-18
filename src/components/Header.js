@@ -10,8 +10,8 @@ export default function Header(props){
                         <img src={require('../images/ravi.jpg')} alt="Ravi Shankar Kumar" />
                     </div>
                     <div className="header-titles">
-                        <h2>Ravi Shankar Kumar</h2>
-                        <h4>UI Developer</h4>
+                        <h2>{window.RSK.personDetails.name}</h2>
+                        <h4>{window.RSK.personDetails.designation}</h4>
                     </div>
                 </div>
                 <Navigation
@@ -23,7 +23,7 @@ export default function Header(props){
                 />
                 <SocialLinks />
                 <div className="header-button">
-                    <a href="https://bit.ly/raviResume" target="_blank" className="btn btn-primary">Download CV</a>
+                    <a href="https://bit.ly/raviResume" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download CV</a>
                 </div>
             </div>
     )
