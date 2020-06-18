@@ -93,7 +93,7 @@ body{
         display: flex;
         justify-content: center;
         margin: 20px 0;
-        .icon-linkedin, .icon-facebook, .icon-twitter{
+        .icon-linkedin, .icon-github, .icon-twitter{
             border-radius: 20px;
             display: flex;
             fill:#fff;
@@ -108,13 +108,13 @@ body{
                 width: 16px;
             }
         }
-        .icon-facebook{
-            svg{width: 11px;}
+        .icon-github{
+            svg{width: 16px;}
         }
         .icon-twitter{
             svg{width: 18px;}
         }
-        .icon-linkedin:hover, .icon-facebook:hover, .icon-twitter:hover{
+        .icon-linkedin:hover, .icon-github:hover, .icon-twitter:hover{
             opacity: 1;
             background-color: rgba(255,255,255,.2);
         }

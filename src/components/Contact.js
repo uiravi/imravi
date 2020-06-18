@@ -6,7 +6,7 @@ export default function Contact(props){
             <div className={"animated-section " + (props.activeNavContact ? "active animate__animated animate__backInDown" : "")}>
                 <div className="scroll-section">
                     <h2 className="page-title">Contact</h2>
-                    
+                    <h3>Coming soon</h3>
                 </div>
             </div>
         </React.Fragment>

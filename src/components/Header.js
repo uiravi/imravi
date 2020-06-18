@@ -23,7 +23,7 @@ export default function Header(props){
                 />
                 <SocialLinks />
                 <div className="header-button">
-                    <a href="https://bit.ly/raviResume" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download CV</a>
+                    <a href="https://bit.ly/2YJEh3W" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download CV</a>
                 </div>
             </div>
     )
