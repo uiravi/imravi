@@ -14,8 +14,8 @@ export default function AboutMe(props){
                     <div className="about-me-right">
                         <p className="about-info"><span>Age:</span> {window.RSK.personDetails.age}</p>
                         <p className="about-info"><span>Residence:</span> {window.RSK.personDetails.residence}</p>
-                        <p className="about-info"><span>Email:</span> {window.RSK.personDetails.email}</p>
-                        <p className="about-info"><span>Linkedin:</span> {window.RSK.personDetails.linkedin}</p>
+                        <p className="about-info"><span>Email:</span> <a href="mailto:jq.ravi@gmail.com">{window.RSK.personDetails.email}</a></p>
+                        <p className="about-info"><span>Linkedin:</span> <a href="https://www.linkedin.com/in/uiravi/" target="_blank">{window.RSK.personDetails.linkedin}</a></p>
                     </div>
                 </div>
                 
