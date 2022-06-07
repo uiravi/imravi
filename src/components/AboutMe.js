@@ -3,7 +3,7 @@ import Testimonials from "./Testimonials";
 
 export default function AboutMe(props){
     return(
-        <div className={"animated-section " + (props.activeNavAbout ? "active animate__animated animate__backInDown" : "")}>
+        <div className={"animated-section " + (props.activeNavAbout ? "active animate__animated animate__lightSpeedInRight" : "animate__animated animate__lightSpeedOutLeft")}>
             <div className="scroll-section">
                 <h2 className="page-title">About <span>Me</span></h2>
                 <div className="about-me-box">

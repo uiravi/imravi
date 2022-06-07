@@ -7,7 +7,7 @@ import Knowledges from "./Knowledges";
 export default function Resume(props){
     return(
         <React.Fragment>
-            <div className={"animated-section " + (props.activeNavHome ? "active animate__animated animate__backInDown" : "")}>
+            <div className={"animated-section " + (props.addAnimationClass ? "animate__animated animate__lightSpeedInRight " : "") + (props.activeNavHome ? "active " : "animate__animated animate__lightSpeedOutLeft")}>
                 <div className="scroll-section">
                     <h2 className="page-title">Resume</h2>
                     <div className="resume-section">

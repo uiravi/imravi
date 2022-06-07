@@ -11,6 +11,7 @@ export default function Home(props){
                 <div className="animated-sections">
                     <Resume 
                         activeNavHome={props.activeNavHome}
+                        addAnimationClass={props.addAnimationClass}
                     />
                     <AboutMe 
                         activeNavAbout={props.activeNavAbout}

@@ -11,23 +11,24 @@ export default class App extends PureComponent {
       activeNavPortfolio: false,
       activeNavContact: false,
       menuActive:false,
-      menuToggle:false
+      menuToggle:false,
+      addAnimationClass: false
     };
   }
 
   navigation = (event) => {
     let ids = event.currentTarget.dataset.id;
     if(ids === "home"){
-      this.setState({activeNavHome: true, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: false});
+      this.setState({activeNavHome: true, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: false, addAnimationClass: true});
     }
     if(ids === "about"){
-      this.setState({activeNavHome: false, activeNavAbout: true, activeNavPortfolio: false, activeNavContact: false});
+      this.setState({activeNavHome: false, activeNavAbout: true, activeNavPortfolio: false, activeNavContact: false, addAnimationClass: false});
     }
     if(ids === "portfolio"){
-      this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: true, activeNavContact: false});
+      this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: true, activeNavContact: false, addAnimationClass: false});
     }
     if(ids === "contact"){
-      this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: true});
+      this.setState({activeNavHome: false, activeNavAbout: false, activeNavPortfolio: false, activeNavContact: true, addAnimationClass: false});
     }
     this.setState({menuActive:false, menuToggle:false});
   }
@@ -65,6 +66,7 @@ export default class App extends PureComponent {
                     activeNavAbout={this.state.activeNavAbout}
                     activeNavPortfolio={this.state.activeNavPortfolio}
                     activeNavContact={this.state.activeNavContact}
+                    addAnimationClass={this.state.addAnimationClass}
                   />
               </section>
               
