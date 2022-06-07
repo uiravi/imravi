@@ -34,10 +34,10 @@ RSK.skills = [
 RSK.experience = [
     {
         exp: "Nov 2016 - Present",
-        designation: "Technical Lead",
+        designation: "Project Lead",
         company:"BOLD Technology Systems Pvt. Ltd",
         whatIDo:[
-            {value: "Working as a technical lead"}
+            {value: "Working as a project lead"}
         ]
     },
     {
